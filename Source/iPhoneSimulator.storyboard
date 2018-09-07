@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kan-AY-wjp">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--iPhone Simulator-->
+        <scene sceneID="a4c-9s-P19">
+            <objects>
+                <viewController id="Kan-AY-wjp" customClass="iPhoneSimulator" customModule="iPhoneSimulator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nba-x5-SC0">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eH6-8P-Utb">
+                                <rect key="frame" x="196.5" y="180.5" width="375" height="663"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="663" id="5Fj-P5-ige"/>
+                                    <constraint firstAttribute="width" constant="375" id="XCW-3H-2JT"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="cny-Cs-NUS" kind="embed" identifier="ContainerViewController" id="rBW-IT-CDB"/>
+                                </connections>
+                            </containerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nMl-cc-MIx">
+                                <rect key="frame" x="0.0" y="1004" width="768" height="141"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWe-Hz-de7">
+                                        <rect key="frame" x="0.0" y="0.0" width="768" height="20"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View as: iPhone (wR cR)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sFB-d6-Rkf">
+                                                <rect key="frame" x="311" y="2" width="146.5" height="16"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.20784479379653931" green="0.20784014463424683" blue="0.20784327387809753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstItem="sFB-d6-Rkf" firstAttribute="centerX" secondItem="pWe-Hz-de7" secondAttribute="centerX" id="L6N-FM-bHk"/>
+                                            <constraint firstItem="sFB-d6-Rkf" firstAttribute="centerY" secondItem="pWe-Hz-de7" secondAttribute="centerY" id="PZw-Ah-NF9"/>
+                                            <constraint firstAttribute="height" constant="20" id="sh5-h6-ID7"/>
+                                        </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="G2A-z2-2qu" appends="YES" id="A8f-vd-g3Y"/>
+                                        </connections>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KW9-44-5qc">
+                                        <rect key="frame" x="0.0" y="20" width="768" height="1"/>
+                                        <color key="backgroundColor" red="0.25490391254425049" green="0.25489839911460876" blue="0.25490215420722961" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="pkk-4D-al3"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="d7D-rA-aZ2">
+                                        <rect key="frame" x="102" y="29" width="564" height="104"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="3kj-Cw-HJo">
+                                                <rect key="frame" x="0.0" y="0.0" width="395" height="104"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="gHG-vu-06G">
+                                                        <rect key="frame" x="0.0" y="0.0" width="395" height="84"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xfC-so-wqP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="47" height="84"/>
+                                                                <color key="tintColor" red="0.18823529411764706" green="0.43137254901960786" blue="0.92941176470588238" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <state key="normal" image="iPhone8Plus"/>
+                                                                <connections>
+                                                                    <action selector="deviceImageTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="086-yo-rVs"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nXh-Pe-lFd">
+                                                                <rect key="frame" x="87" y="0.0" width="47" height="84"/>
+                                                                <state key="normal" image="iPhoneX"/>
+                                                                <connections>
+                                                                    <action selector="deviceImageTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="LOG-89-5bu"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7rn-UK-aF3">
+                                                                <rect key="frame" x="174" y="0.0" width="47" height="84"/>
+                                                                <state key="normal" image="iPhone8"/>
+                                                                <connections>
+                                                                    <action selector="deviceImageTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="9WP-I2-2TG"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MfD-iT-g5s">
+                                                                <rect key="frame" x="261" y="0.0" width="47" height="84"/>
+                                                                <state key="normal" image="iPhoneSE"/>
+                                                                <connections>
+                                                                    <action selector="deviceImageTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="25i-3m-QO9"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oW2-EA-mmH">
+                                                                <rect key="frame" x="348" y="0.0" width="47" height="84"/>
+                                                                <state key="normal" image="iPhone4S"/>
+                                                                <connections>
+                                                                    <action selector="deviceImageTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="dHg-ec-rVr"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.20784479380000001" green="0.2078401446" blue="0.20784327389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    </stackView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95q-pL-x5e">
+                                                        <rect key="frame" x="177" y="88" width="41.5" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="hGm-zr-ygs"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="9Tn-cX-0SA">
+                                                <rect key="frame" x="435" y="0.0" width="129" height="104"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxQ-Ag-7W1">
+                                                        <rect key="frame" x="0.0" y="8" width="1" height="88"/>
+                                                        <color key="backgroundColor" red="0.2549039125" green="0.25489839910000001" blue="0.25490215420000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="1" id="cSE-NO-oFT"/>
+                                                            <constraint firstAttribute="height" constant="88" id="yk9-4N-LTB"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dG6-WW-VT1">
+                                                        <rect key="frame" x="41" y="0.0" width="88" height="104"/>
+                                                        <subviews>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="MD1-mk-vhw">
+                                                                <rect key="frame" x="0.0" y="0.0" width="88" height="84"/>
+                                                                <subviews>
+                                                                    <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mca-kJ-sht">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="84"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="88" id="jGD-6c-xfm"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="OrientationPortrait"/>
+                                                                        <connections>
+                                                                            <action selector="orientationTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="2Fw-1l-aZK"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                    <button hidden="YES" opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o7p-hV-EZK">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="88" height="88"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="width" constant="88" id="aPK-Rk-o6y"/>
+                                                                        </constraints>
+                                                                        <state key="normal" image="OrientationLandscape"/>
+                                                                        <connections>
+                                                                            <action selector="orientationTapped:" destination="Kan-AY-wjp" eventType="touchUpInside" id="uXt-4b-Sqz"/>
+                                                                        </connections>
+                                                                    </button>
+                                                                </subviews>
+                                                            </stackView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Orientation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osg-mC-gyM">
+                                                                <rect key="frame" x="10.5" y="88" width="67.5" height="16"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="16" id="xVU-0J-xlj"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.20784479380000001" green="0.2078401446" blue="0.20784327389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.20784479379653931" green="0.20784014463424683" blue="0.20784327387809753" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstItem="pWe-Hz-de7" firstAttribute="leading" secondItem="nMl-cc-MIx" secondAttribute="leading" id="8gD-SU-zZP"/>
+                                    <constraint firstItem="KW9-44-5qc" firstAttribute="leading" secondItem="nMl-cc-MIx" secondAttribute="leading" id="E0r-lo-P9K"/>
+                                    <constraint firstItem="d7D-rA-aZ2" firstAttribute="top" secondItem="KW9-44-5qc" secondAttribute="bottom" constant="8" id="GKH-kW-aej"/>
+                                    <constraint firstAttribute="height" constant="141" id="RNN-R0-ZmH"/>
+                                    <constraint firstAttribute="trailing" secondItem="KW9-44-5qc" secondAttribute="trailing" id="Vy7-0f-zQ3"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="d7D-rA-aZ2" secondAttribute="bottom" constant="8" id="YxI-Ud-nm6"/>
+                                    <constraint firstAttribute="trailing" secondItem="pWe-Hz-de7" secondAttribute="trailing" id="d65-G7-nSo"/>
+                                    <constraint firstItem="pWe-Hz-de7" firstAttribute="top" secondItem="nMl-cc-MIx" secondAttribute="top" id="g6u-tc-cns"/>
+                                    <constraint firstItem="d7D-rA-aZ2" firstAttribute="centerX" secondItem="nMl-cc-MIx" secondAttribute="centerX" id="je4-gt-ubs"/>
+                                    <constraint firstItem="KW9-44-5qc" firstAttribute="top" secondItem="pWe-Hz-de7" secondAttribute="bottom" id="pII-eE-RIZ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.25098234415054321" green="0.25097692012786865" blue="0.25098058581352234" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="nMl-cc-MIx" firstAttribute="bottom" secondItem="Nc1-l7-vZd" secondAttribute="bottom" constant="121" id="CaX-Pw-qij"/>
+                            <constraint firstItem="eH6-8P-Utb" firstAttribute="centerY" secondItem="Nba-x5-SC0" secondAttribute="centerY" id="LZz-m2-Hxk"/>
+                            <constraint firstItem="nMl-cc-MIx" firstAttribute="trailing" secondItem="Nc1-l7-vZd" secondAttribute="trailing" id="M2H-v3-uGb"/>
+                            <constraint firstItem="eH6-8P-Utb" firstAttribute="centerX" secondItem="Nba-x5-SC0" secondAttribute="centerX" id="ZHg-im-fWq"/>
+                            <constraint firstItem="nMl-cc-MIx" firstAttribute="leading" secondItem="Nc1-l7-vZd" secondAttribute="leading" id="eKu-jw-gS4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Nc1-l7-vZd"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerHeightConstraint" destination="5Fj-P5-ige" id="ZW2-Je-MH2"/>
+                        <outlet property="containerWidthConstraint" destination="XCW-3H-2JT" id="OhX-uB-t2H"/>
+                        <outlet property="deviceLabel" destination="sFB-d6-Rkf" id="6bK-f4-Z4s"/>
+                        <outlet property="deviceListBottomConstraint" destination="CaX-Pw-qij" id="8Q2-u1-wil"/>
+                        <outlet property="deviceListView" destination="nMl-cc-MIx" id="wBj-Nx-IQc"/>
+                        <outlet property="deviceView" destination="pWe-Hz-de7" id="B0r-Ds-uy0"/>
+                        <outlet property="orientationLandscapeButton" destination="o7p-hV-EZK" id="4c1-Fk-SOW"/>
+                        <outlet property="orientationPortraitButton" destination="mca-kJ-sht" id="JW9-Cn-hCt"/>
+                        <outletCollection property="deviceButtons" destination="oW2-EA-mmH" collectionClass="NSMutableArray" id="9o0-O5-Tkx"/>
+                        <outletCollection property="deviceButtons" destination="nXh-Pe-lFd" collectionClass="NSMutableArray" id="hWK-jl-0hJ"/>
+                        <outletCollection property="deviceButtons" destination="MfD-iT-g5s" collectionClass="NSMutableArray" id="rYK-a0-u3Z"/>
+                        <outletCollection property="deviceButtons" destination="xfC-so-wqP" collectionClass="NSMutableArray" id="zgB-4o-K1N"/>
+                        <outletCollection property="deviceButtons" destination="7rn-UK-aF3" collectionClass="NSMutableArray" id="G61-Bm-bji"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GdU-LK-azx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="G2A-z2-2qu">
+                    <connections>
+                        <action selector="deviceTapped:" destination="Kan-AY-wjp" id="r2y-GC-8m8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="344.53125" y="188.0859375"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="VJ7-b8-fT4">
+            <objects>
+                <viewController id="cny-Cs-NUS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Kxw-wt-SvJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="663"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="j4W-lf-ePj"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="663"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DDP-Ql-848" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="872"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OrientationLandscape" width="88" height="88"/>
+        <image name="OrientationPortrait" width="88" height="88"/>
+        <image name="iPhone4S" width="47" height="88"/>
+        <image name="iPhone8" width="47" height="88"/>
+        <image name="iPhone8Plus" width="47" height="88"/>
+        <image name="iPhoneSE" width="47" height="88"/>
+        <image name="iPhoneX" width="47" height="88"/>
+    </resources>
+</document>
